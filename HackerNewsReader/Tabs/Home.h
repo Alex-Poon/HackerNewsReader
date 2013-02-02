@@ -8,13 +8,16 @@
 
 #import <UIKit/UIKit.h>
 #import "PullRefreshTableViewController.h"
+#import "ADTClientDelegate.h"
+#import "ADTClient.h"
 
-@interface Home : PullRefreshTableViewController {
-    
+@interface Home : PullRefreshTableViewController <ADTClientDelegate> {
+    ADTClient *_audioACR;
 }
 
 - (NSString*)baseUrl;
 - (NSString*)basePage;
 - (NSString*)baseTitle;
-
+@property (nonatomic, retain) ADTClient *audioACR;
 @end
+

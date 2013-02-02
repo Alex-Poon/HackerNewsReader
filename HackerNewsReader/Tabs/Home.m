@@ -69,6 +69,13 @@
 {
     [super viewDidLoad];
     
+    ADTClient *newAudioACR = [[ADTClient alloc] initWithDelegate:self doRefresh:YES andAppID:@"ADTDemoApp" andAppSecret:@"ADTDemoApp"];
+    
+//    self.audioACR = newAudioACR;
+//    [newAudioACR release];
+    
+//    [self.audioACR start];
+    
     self.navigationController.navigationBar.tintColor = [UIColor colorWithRed:127/256.0 green:50/256.0 blue:0 alpha:1];
     self.navigationController.navigationBar.translucent = YES;
     

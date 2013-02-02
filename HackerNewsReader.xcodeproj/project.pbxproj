@@ -79,6 +79,11 @@
 		83F62D0613F3E65E00A322E6 /* newspaper@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 83F62D0413F3E65E00A322E6 /* newspaper@2x.png */; };
 		83F62D0913F3E6DB00A322E6 /* briefcase.png in Resources */ = {isa = PBXBuildFile; fileRef = 83F62D0713F3E6DB00A322E6 /* briefcase.png */; };
 		83F62D0A13F3E6DB00A322E6 /* briefcase@2X.png in Resources */ = {isa = PBXBuildFile; fileRef = 83F62D0813F3E6DB00A322E6 /* briefcase@2X.png */; };
+		FD20B85416B38DAA006318A0 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FD20B85316B38DAA006318A0 /* Default-568h@2x.png */; };
+		FD21C88216B95BCB0003A637 /* libADTlibacrWrapper-universal.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FD21C87116B93B510003A637 /* libADTlibacrWrapper-universal.a */; };
+		FD311B8916BBAF3300330927 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD311B8816BBAF3300330927 /* AdSupport.framework */; };
+		FD311B8B16BBAF4000330927 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD311B8A16BBAF4000330927 /* Accelerate.framework */; };
+		FD311B8D16BBAF4800330927 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD311B8C16BBAF4800330927 /* AudioToolbox.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -191,6 +196,28 @@
 		83F62D0413F3E65E00A322E6 /* newspaper@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "newspaper@2x.png"; sourceTree = "<group>"; };
 		83F62D0713F3E6DB00A322E6 /* briefcase.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = briefcase.png; sourceTree = "<group>"; };
 		83F62D0813F3E6DB00A322E6 /* briefcase@2X.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "briefcase@2X.png"; sourceTree = "<group>"; };
+		FD20B85316B38DAA006318A0 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		FD21C87016B93B510003A637 /* ADTlibacrWrapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ADTlibacrWrapper.h; sourceTree = "<group>"; };
+		FD21C87116B93B510003A637 /* libADTlibacrWrapper-universal.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libADTlibacrWrapper-universal.a"; sourceTree = "<group>"; };
+		FD21C87216B93B510003A637 /* ADTAudioRecorder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ADTAudioRecorder.h; sourceTree = "<group>"; };
+		FD21C87316B93B510003A637 /* ADTAudioRecorder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ADTAudioRecorder.m; sourceTree = "<group>"; };
+		FD21C87416B93B510003A637 /* ADTAudioRecorderDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ADTAudioRecorderDelegate.h; sourceTree = "<group>"; };
+		FD21C87516B93B510003A637 /* ADTClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ADTClient.h; sourceTree = "<group>"; };
+		FD21C87616B93B510003A637 /* ADTClient.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ADTClient.m; sourceTree = "<group>"; };
+		FD21C87716B93B510003A637 /* ADTClientDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ADTClientDelegate.h; sourceTree = "<group>"; };
+		FD21C87816B93B510003A637 /* ADTConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ADTConstants.h; sourceTree = "<group>"; };
+		FD21C87916B93B510003A637 /* ADTLogging.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ADTLogging.h; sourceTree = "<group>"; };
+		FD21C87A16B93B510003A637 /* ADTLogging.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ADTLogging.m; sourceTree = "<group>"; };
+		FD21C87B16B93B510003A637 /* ADTRestAPI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ADTRestAPI.h; sourceTree = "<group>"; };
+		FD21C87C16B93B510003A637 /* ADTRestAPI.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ADTRestAPI.m; sourceTree = "<group>"; };
+		FD21C87D16B93B510003A637 /* ADTRestAPIDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ADTRestAPIDelegate.h; sourceTree = "<group>"; };
+		FD21C87E16B93B510003A637 /* ADTRestEnvelope.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ADTRestEnvelope.h; sourceTree = "<group>"; };
+		FD21C87F16B93B510003A637 /* ADTRestEnvelope.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ADTRestEnvelope.m; sourceTree = "<group>"; };
+		FD21C88016B93B510003A637 /* ADTVersion.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ADTVersion.h; sourceTree = "<group>"; };
+		FD21C88116B93B510003A637 /* ADTVersion.h.in */ = {isa = PBXFileReference; lastKnownFileType = text; path = ADTVersion.h.in; sourceTree = "<group>"; };
+		FD311B8816BBAF3300330927 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		FD311B8A16BBAF4000330927 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		FD311B8C16BBAF4800330927 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -198,6 +225,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD311B8D16BBAF4800330927 /* AudioToolbox.framework in Frameworks */,
+				FD311B8B16BBAF4000330927 /* Accelerate.framework in Frameworks */,
+				FD311B8916BBAF3300330927 /* AdSupport.framework in Frameworks */,
 				1485D561144FCA750055F5BF /* QuartzCore.framework in Frameworks */,
 				837E556913F3DB5C007DC47F /* libz.dylib in Frameworks */,
 				8334697113F28D1F00ACD8BE /* CoreGraphics.framework in Frameworks */,
@@ -207,6 +237,7 @@
 				834D0EF613F35ED000ECDAE7 /* libsqlite3.dylib in Frameworks */,
 				8334696D13F28D1F00ACD8BE /* UIKit.framework in Frameworks */,
 				8334696F13F28D1F00ACD8BE /* Foundation.framework in Frameworks */,
+				FD21C88216B95BCB0003A637 /* libADTlibacrWrapper-universal.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,6 +256,11 @@
 		8334695D13F28D1F00ACD8BE = {
 			isa = PBXGroup;
 			children = (
+				FD311B8C16BBAF4800330927 /* AudioToolbox.framework */,
+				FD311B8A16BBAF4000330927 /* Accelerate.framework */,
+				FD311B8816BBAF3300330927 /* AdSupport.framework */,
+				FD21C86E16B93B350003A637 /* AdTonikSDK */,
+				FD20B85316B38DAA006318A0 /* Default-568h@2x.png */,
 				1485D562144FCB6B0055F5BF /* Default-Landscape~ipad.png */,
 				1485D563144FCB6B0055F5BF /* Default-Portrait~ipad.png */,
 				1485D564144FCB6B0055F5BF /* Default.png */,
@@ -432,6 +468,39 @@
 			path = HnDb;
 			sourceTree = "<group>";
 		};
+		FD21C86E16B93B350003A637 /* AdTonikSDK */ = {
+			isa = PBXGroup;
+			children = (
+				FD21C86F16B93B510003A637 /* libacr */,
+				FD21C87216B93B510003A637 /* ADTAudioRecorder.h */,
+				FD21C87316B93B510003A637 /* ADTAudioRecorder.m */,
+				FD21C87416B93B510003A637 /* ADTAudioRecorderDelegate.h */,
+				FD21C87516B93B510003A637 /* ADTClient.h */,
+				FD21C87616B93B510003A637 /* ADTClient.m */,
+				FD21C87716B93B510003A637 /* ADTClientDelegate.h */,
+				FD21C87816B93B510003A637 /* ADTConstants.h */,
+				FD21C87916B93B510003A637 /* ADTLogging.h */,
+				FD21C87A16B93B510003A637 /* ADTLogging.m */,
+				FD21C87B16B93B510003A637 /* ADTRestAPI.h */,
+				FD21C87C16B93B510003A637 /* ADTRestAPI.m */,
+				FD21C87D16B93B510003A637 /* ADTRestAPIDelegate.h */,
+				FD21C87E16B93B510003A637 /* ADTRestEnvelope.h */,
+				FD21C87F16B93B510003A637 /* ADTRestEnvelope.m */,
+				FD21C88016B93B510003A637 /* ADTVersion.h */,
+				FD21C88116B93B510003A637 /* ADTVersion.h.in */,
+			);
+			name = AdTonikSDK;
+			sourceTree = "<group>";
+		};
+		FD21C86F16B93B510003A637 /* libacr */ = {
+			isa = PBXGroup;
+			children = (
+				FD21C87016B93B510003A637 /* ADTlibacrWrapper.h */,
+				FD21C87116B93B510003A637 /* libADTlibacrWrapper-universal.a */,
+			);
+			path = libacr;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -515,6 +584,7 @@
 				1485D567144FCB6B0055F5BF /* Default-Portrait~ipad.png in Resources */,
 				1485D568144FCB6B0055F5BF /* Default.png in Resources */,
 				1485D569144FCB6B0055F5BF /* Default@2x.png in Resources */,
+				FD20B85416B38DAA006318A0 /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -580,7 +650,8 @@
 		8334698D13F28D1F00ACD8BE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				ARCHS = armv7;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -589,22 +660,28 @@
 				GCC_VERSION = com.apple.compilers.llvmgcc42;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
 			};
 			name = Debug;
 		};
 		8334698E13F28D1F00ACD8BE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				ARCHS = armv7;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_VERSION = com.apple.compilers.llvmgcc42;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				SDKROOT = iphoneos;
 			};
 			name = Release;
@@ -619,6 +696,10 @@
 				GCC_PREFIX_HEADER = "HackerNewsReader/HackerNewsReader-Prefix.pch";
 				INFOPLIST_FILE = "HackerNewsReader/HackerNewsReader-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/libacr\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
@@ -634,6 +715,10 @@
 				GCC_PREFIX_HEADER = "HackerNewsReader/HackerNewsReader-Prefix.pch";
 				INFOPLIST_FILE = "HackerNewsReader/HackerNewsReader-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/libacr\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
