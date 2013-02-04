@@ -85,8 +85,8 @@
 // This method will start the queue
 - (void)go;
 
-@property (assign, nonatomic, setter=setUploadProgressDelegate:) id uploadProgressDelegate;
-@property (assign, nonatomic, setter=setDownloadProgressDelegate:) id downloadProgressDelegate;
+@property (assign, nonatomic, setter=setUploadProgressDelegate:) __unsafe_unretained id uploadProgressDelegate;
+@property (assign, nonatomic, setter=setDownloadProgressDelegate:) __unsafe_unretained id downloadProgressDelegate;
 
 @property (assign) SEL requestDidStartSelector;
 @property (assign) SEL requestDidReceiveResponseHeadersSelector;

@@ -98,7 +98,7 @@ typedef void (^ASIDataBlock)(NSData *data);
 	// Another delegate that is also notified of request status changes and progress updates
 	// Generally, you won't use this directly, but ASINetworkQueue sets itself as the queue so it can proxy updates to its own delegates
 	// NOTE: WILL BE RETAINED BY THE REQUEST
-	id <ASIHTTPRequestDelegate, ASIProgressDelegate> queue;
+	__unsafe_unretained id <ASIHTTPRequestDelegate, ASIProgressDelegate> queue;
 	
 	// HTTP method to use (eg: GET / POST / PUT / DELETE / HEAD etc). Defaults to GET
 	NSString *requestMethod;
@@ -206,7 +206,7 @@ typedef void (^ASIDataBlock)(NSData *data);
 	NSString *proxyDomain;
 	
 	// Delegate for displaying upload progress (usually an NSProgressIndicator, but you can supply a different object and handle this yourself)
-	id <ASIProgressDelegate> uploadProgressDelegate;
+	__unsafe_unretained id <ASIProgressDelegate> uploadProgressDelegate;
 	
 	// Delegate for displaying download progress (usually an NSProgressIndicator, but you can supply a different object and handle this yourself)
 	id <ASIProgressDelegate> downloadProgressDelegate;

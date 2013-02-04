@@ -83,14 +83,6 @@
 		FD311B8916BBAF3300330927 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD311B8816BBAF3300330927 /* AdSupport.framework */; };
 		FD311B8B16BBAF4000330927 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD311B8A16BBAF4000330927 /* Accelerate.framework */; };
 		FD311B8D16BBAF4800330927 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD311B8C16BBAF4800330927 /* AudioToolbox.framework */; };
-		FD7A307616BCD552005D0411 /* libADTAudioACR-universal.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FD7A306316BCD552005D0411 /* libADTAudioACR-universal.a */; };
-		FD7A307716BCD552005D0411 /* ADTRestEnvelope.m in Sources */ = {isa = PBXBuildFile; fileRef = FD7A306516BCD552005D0411 /* ADTRestEnvelope.m */; };
-		FD7A307816BCD552005D0411 /* ADTRestAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = FD7A306816BCD552005D0411 /* ADTRestAPI.m */; };
-		FD7A307916BCD552005D0411 /* ADTLogging.m in Sources */ = {isa = PBXBuildFile; fileRef = FD7A306A16BCD552005D0411 /* ADTLogging.m */; };
-		FD7A307A16BCD552005D0411 /* ADTAudioRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = FD7A306E16BCD552005D0411 /* ADTAudioRecorder.m */; };
-		FD7A307B16BCD552005D0411 /* ADTClient.m in Sources */ = {isa = PBXBuildFile; fileRef = FD7A307116BCD552005D0411 /* ADTClient.m */; };
-		FD7A307C16BCD552005D0411 /* ADTUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = FD7A307416BCD552005D0411 /* ADTUtils.m */; };
-		FD7A307D16BCD552005D0411 /* ADTVersion.h.in in Resources */ = {isa = PBXBuildFile; fileRef = FD7A307516BCD552005D0411 /* ADTVersion.h.in */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -207,26 +199,6 @@
 		FD311B8816BBAF3300330927 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		FD311B8A16BBAF4000330927 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
 		FD311B8C16BBAF4800330927 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
-		FD7A306216BCD552005D0411 /* ADTAudioACR.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADTAudioACR.h; sourceTree = "<group>"; };
-		FD7A306316BCD552005D0411 /* libADTAudioACR-universal.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libADTAudioACR-universal.a"; sourceTree = "<group>"; };
-		FD7A306416BCD552005D0411 /* ADTUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ADTUtils.h; path = "../adtonik-client/iOS/src/ADTUtils.h"; sourceTree = "<group>"; };
-		FD7A306516BCD552005D0411 /* ADTRestEnvelope.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ADTRestEnvelope.m; path = "../adtonik-client/iOS/src/ADTRestEnvelope.m"; sourceTree = "<group>"; };
-		FD7A306616BCD552005D0411 /* ADTRestEnvelope.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ADTRestEnvelope.h; path = "../adtonik-client/iOS/src/ADTRestEnvelope.h"; sourceTree = "<group>"; };
-		FD7A306716BCD552005D0411 /* ADTRestAPIDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ADTRestAPIDelegate.h; path = "../adtonik-client/iOS/src/ADTRestAPIDelegate.h"; sourceTree = "<group>"; };
-		FD7A306816BCD552005D0411 /* ADTRestAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ADTRestAPI.m; path = "../adtonik-client/iOS/src/ADTRestAPI.m"; sourceTree = "<group>"; };
-		FD7A306916BCD552005D0411 /* ADTRestAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ADTRestAPI.h; path = "../adtonik-client/iOS/src/ADTRestAPI.h"; sourceTree = "<group>"; };
-		FD7A306A16BCD552005D0411 /* ADTLogging.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ADTLogging.m; path = "../adtonik-client/iOS/src/ADTLogging.m"; sourceTree = "<group>"; };
-		FD7A306B16BCD552005D0411 /* ADTLogging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ADTLogging.h; path = "../adtonik-client/iOS/src/ADTLogging.h"; sourceTree = "<group>"; };
-		FD7A306C16BCD552005D0411 /* ADTConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ADTConstants.h; path = "../adtonik-client/iOS/src/ADTConstants.h"; sourceTree = "<group>"; };
-		FD7A306D16BCD552005D0411 /* ADTAudioRecorderDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ADTAudioRecorderDelegate.h; path = "../adtonik-client/iOS/src/ADTAudioRecorderDelegate.h"; sourceTree = "<group>"; };
-		FD7A306E16BCD552005D0411 /* ADTAudioRecorder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ADTAudioRecorder.m; path = "../adtonik-client/iOS/src/ADTAudioRecorder.m"; sourceTree = "<group>"; };
-		FD7A306F16BCD552005D0411 /* ADTAudioRecorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ADTAudioRecorder.h; path = "../adtonik-client/iOS/src/ADTAudioRecorder.h"; sourceTree = "<group>"; };
-		FD7A307016BCD552005D0411 /* ADTClientDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ADTClientDelegate.h; path = "../adtonik-client/iOS/src/ADTClientDelegate.h"; sourceTree = "<group>"; };
-		FD7A307116BCD552005D0411 /* ADTClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ADTClient.m; path = "../adtonik-client/iOS/src/ADTClient.m"; sourceTree = "<group>"; };
-		FD7A307216BCD552005D0411 /* ADTClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ADTClient.h; path = "../adtonik-client/iOS/src/ADTClient.h"; sourceTree = "<group>"; };
-		FD7A307316BCD552005D0411 /* ADTVersion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ADTVersion.h; path = "../adtonik-client/iOS/src/ADTVersion.h"; sourceTree = "<group>"; };
-		FD7A307416BCD552005D0411 /* ADTUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ADTUtils.m; path = "../adtonik-client/iOS/src/ADTUtils.m"; sourceTree = "<group>"; };
-		FD7A307516BCD552005D0411 /* ADTVersion.h.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = ADTVersion.h.in; path = "../adtonik-client/iOS/src/ADTVersion.h.in"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -246,7 +218,6 @@
 				834D0EF613F35ED000ECDAE7 /* libsqlite3.dylib in Frameworks */,
 				8334696D13F28D1F00ACD8BE /* UIKit.framework in Frameworks */,
 				8334696F13F28D1F00ACD8BE /* Foundation.framework in Frameworks */,
-				FD7A307616BCD552005D0411 /* libADTAudioACR-universal.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,7 +236,6 @@
 		8334695D13F28D1F00ACD8BE = {
 			isa = PBXGroup;
 			children = (
-				FD7A306016BCD529005D0411 /* AdTonikSDK */,
 				FD311B8A16BBAF4000330927 /* Accelerate.framework */,
 				FD311B8816BBAF3300330927 /* AdSupport.framework */,
 				FD20B85316B38DAA006318A0 /* Default-568h@2x.png */,
@@ -477,42 +447,6 @@
 			path = HnDb;
 			sourceTree = "<group>";
 		};
-		FD7A306016BCD529005D0411 /* AdTonikSDK */ = {
-			isa = PBXGroup;
-			children = (
-				FD7A306116BCD552005D0411 /* libacr */,
-				FD7A306416BCD552005D0411 /* ADTUtils.h */,
-				FD7A306516BCD552005D0411 /* ADTRestEnvelope.m */,
-				FD7A306616BCD552005D0411 /* ADTRestEnvelope.h */,
-				FD7A306716BCD552005D0411 /* ADTRestAPIDelegate.h */,
-				FD7A306816BCD552005D0411 /* ADTRestAPI.m */,
-				FD7A306916BCD552005D0411 /* ADTRestAPI.h */,
-				FD7A306A16BCD552005D0411 /* ADTLogging.m */,
-				FD7A306B16BCD552005D0411 /* ADTLogging.h */,
-				FD7A306C16BCD552005D0411 /* ADTConstants.h */,
-				FD7A306D16BCD552005D0411 /* ADTAudioRecorderDelegate.h */,
-				FD7A306E16BCD552005D0411 /* ADTAudioRecorder.m */,
-				FD7A306F16BCD552005D0411 /* ADTAudioRecorder.h */,
-				FD7A307016BCD552005D0411 /* ADTClientDelegate.h */,
-				FD7A307116BCD552005D0411 /* ADTClient.m */,
-				FD7A307216BCD552005D0411 /* ADTClient.h */,
-				FD7A307316BCD552005D0411 /* ADTVersion.h */,
-				FD7A307416BCD552005D0411 /* ADTUtils.m */,
-				FD7A307516BCD552005D0411 /* ADTVersion.h.in */,
-			);
-			name = AdTonikSDK;
-			sourceTree = "<group>";
-		};
-		FD7A306116BCD552005D0411 /* libacr */ = {
-			isa = PBXGroup;
-			children = (
-				FD7A306216BCD552005D0411 /* ADTAudioACR.h */,
-				FD7A306316BCD552005D0411 /* libADTAudioACR-universal.a */,
-			);
-			name = libacr;
-			path = "../adtonik-client/iOS/src/libacr";
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -600,7 +534,6 @@
 				1485D568144FCB6B0055F5BF /* Default.png in Resources */,
 				1485D569144FCB6B0055F5BF /* Default@2x.png in Resources */,
 				FD20B85416B38DAA006318A0 /* Default-568h@2x.png in Resources */,
-				FD7A307D16BCD552005D0411 /* ADTVersion.h.in in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -638,12 +571,6 @@
 				83D0633313F54533000B8CC3 /* ArticleComments.m in Sources */,
 				8393AB5A13F7CACE00EBE88B /* Ask.m in Sources */,
 				1485D55E144FCA0F0055F5BF /* PullRefreshTableViewController.m in Sources */,
-				FD7A307716BCD552005D0411 /* ADTRestEnvelope.m in Sources */,
-				FD7A307816BCD552005D0411 /* ADTRestAPI.m in Sources */,
-				FD7A307916BCD552005D0411 /* ADTLogging.m in Sources */,
-				FD7A307A16BCD552005D0411 /* ADTAudioRecorder.m in Sources */,
-				FD7A307B16BCD552005D0411 /* ADTClient.m in Sources */,
-				FD7A307C16BCD552005D0411 /* ADTUtils.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -720,7 +647,7 @@
 				GCC_PREFIX_HEADER = "HackerNewsReader/HackerNewsReader-Prefix.pch";
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = "HackerNewsReader/HackerNewsReader-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/libacr\"",
@@ -741,7 +668,7 @@
 				GCC_PREFIX_HEADER = "HackerNewsReader/HackerNewsReader-Prefix.pch";
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = "HackerNewsReader/HackerNewsReader-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/libacr\"",

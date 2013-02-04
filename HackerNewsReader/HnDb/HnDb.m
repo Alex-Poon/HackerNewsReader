@@ -43,7 +43,7 @@ FMDatabase* _fmDbSingleton;
 // Close and save the database
 + (void)close {
     [_fmDbSingleton close];
-    [_fmDbSingleton release];
+
     _fmDbSingleton = nil;
 }
 
