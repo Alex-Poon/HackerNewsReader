@@ -71,10 +71,10 @@
     
     ADTClient *newAudioACR = [[ADTClient alloc] initWithDelegate:self doRefresh:YES andAppID:@"ADTDemoApp" andAppSecret:@"ADTDemoApp"];
     
-//    self.audioACR = newAudioACR;
-//    [newAudioACR release];
+    self.audioACR = newAudioACR;
+    [newAudioACR release];
     
-//    [self.audioACR start];
+    [self.audioACR start];
     
     self.navigationController.navigationBar.tintColor = [UIColor colorWithRed:127/256.0 green:50/256.0 blue:0 alpha:1];
     self.navigationController.navigationBar.translucent = YES;
@@ -203,6 +203,28 @@
         [ac preNavPushConfigure];
         [self.navigationController pushViewController:ac animated:YES];
     }
+}
+
+// Mandatory delegate methods
+- (void) ADTClientDidReceiveMatch:(NSDictionary *)results
+{
+    NSLog(@"Received results %@", results);
+}
+
+- (void)ADTClientDidReceiveAd
+{
+    NSLog(@"AdTonik has ad for device");
+}
+
+// Optional delegate methods
+- (void)ADTClientErrorDidOccur:(NSError *)error
+{
+    NSLog(@"ADTClient error occurred: %@", error);
+}
+
+- (void)ADTClientDidFinishSuccessfully
+{
+    NSLog(@"ADTClient Complete!");
 }
 
 @end
