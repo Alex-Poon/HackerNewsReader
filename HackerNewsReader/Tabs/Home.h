@@ -12,8 +12,14 @@
 #import "ADTClientDelegate.h"
 #import "ADTClient.h"
 
-@interface Home : PullRefreshTableViewController <ADTClientDelegate> {
+#import "MPAdView.h"
+
+#define PUB_ID_320x50 @"agltb3B1Yi1pbmNyDAsSBFNpdGUYkaoMDA"
+#define PUB_ID_300x250 @"agltb3B1Yi1pbmNyDAsSBFNpdGUYycEMDA"
+
+@interface Home : PullRefreshTableViewController <ADTClientDelegate, MPAdViewDelegate> {
     ADTClient *_audioACR;
+    MPAdView *_adView;
 }
 
 - (NSString*)baseUrl;

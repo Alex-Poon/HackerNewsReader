@@ -21,6 +21,7 @@
 
 - (void)dealloc
 {
+    [_adView release];
     [super dealloc];
 }
 
@@ -79,6 +80,23 @@
     self.navigationController.navigationBar.tintColor = [UIColor colorWithRed:127/256.0 green:50/256.0 blue:0 alpha:1];
     self.navigationController.navigationBar.translucent = YES;
     
+    // Instantiate the MPAdView with your ad unit ID.
+    _adView = [[MPAdView alloc] initWithAdUnitId:PUB_ID_320x50 size:MOPUB_BANNER_SIZE];
+    
+    // Register your view controller as the MPAdView's delegate.
+    _adView.delegate = self;
+    
+    // Set the ad view's frame (in our case, to occupy the bottom of the screen).
+    CGRect frame = _adView.frame;
+    CGSize size = [_adView adContentViewSize];
+    frame.origin.y = self.view.bounds.size.height - size.height;
+    _adView.frame = frame;
+    
+    // Add the ad view to your controller's view hierarchy.
+    [self.view addSubview:_adView];
+    
+    // Call for an ad.
+    [_adView loadAd];
     
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -189,22 +207,6 @@
     return self.tableView.rowHeight;
 }
 
-#pragma mark - Table view delegate
-
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    NSString* sql = @"select a.id from pages p, articles a where p.article_id = a.id and p.position=? and p.name=?";
-    FMResultSet *s = [[HnDb instance] executeQuery:sql withArgumentsInArray:$arr($int(indexPath.row+1), self.basePage)];
-    if ([s next]) {
-        int articleId = [s intForColumnIndex:0];
-        
-        ArticleComments* ac = [[ArticleComments alloc] initWithNibName:@"ArticleComments" bundle:nil];
-        ac.articleId = articleId;
-        [ac preNavPushConfigure];
-        [self.navigationController pushViewController:ac animated:YES];
-    }
-}
-
 // Mandatory delegate methods
 - (void) ADTClientDidReceiveMatch:(NSDictionary *)results
 {
@@ -225,6 +227,27 @@
 - (void)ADTClientDidFinishSuccessfully
 {
     NSLog(@"ADTClient Complete!");
+}
+
+// Implement MPAdViewDelegate's required method, -viewControllerForPresentingModalView.
+- (UIViewController *)viewControllerForPresentingModalView {
+    return self;
+}
+
+#pragma mark - Table view delegate
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    NSString* sql = @"select a.id from pages p, articles a where p.article_id = a.id and p.position=? and p.name=?";
+    FMResultSet *s = [[HnDb instance] executeQuery:sql withArgumentsInArray:$arr($int(indexPath.row+1), self.basePage)];
+    if ([s next]) {
+        int articleId = [s intForColumnIndex:0];
+        
+        ArticleComments* ac = [[ArticleComments alloc] initWithNibName:@"ArticleComments" bundle:nil];
+        ac.articleId = articleId;
+        [ac preNavPushConfigure];
+        [self.navigationController pushViewController:ac animated:YES];
+    }
 }
 
 @end
